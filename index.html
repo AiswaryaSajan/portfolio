@@ -10,132 +10,178 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
     }
 
     body {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    header {
       text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #2563eb, #1e293b);
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1 {
-      font-size: 48px;
+    header h1 {
+      font-size: 40px;
       margin-bottom: 10px;
     }
 
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
     h2 {
-      margin-top: 50px;
-      margin-bottom: 20px;
-      font-size: 28px;
-      border-bottom: 2px solid white;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #2563eb;
       display: inline-block;
       padding-bottom: 5px;
     }
 
-    p {
-      font-size: 18px;
-      margin-bottom: 15px;
-      opacity: 0.9;
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     .skills span {
       display: inline-block;
-      background: white;
-      color: #2a5298;
-      padding: 8px 15px;
+      background: #2563eb;
+      padding: 8px 14px;
       border-radius: 20px;
       margin: 5px;
-      font-weight: bold;
+      font-size: 14px;
     }
 
-    .card {
-      background: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 12px;
-      margin: 15px 0;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-      background: rgba(255,255,255,0.2);
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #1e293b;
+      margin-top: 50px;
     }
 
     a {
-      color: yellow;
+      color: #60a5fa;
       text-decoration: none;
-      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 15px;
       padding: 10px 20px;
-      background: white;
-      color: #2a5298;
-      border-radius: 25px;
+      background: #2563eb;
+      border-radius: 5px;
+      color: white;
       text-decoration: none;
-      font-weight: bold;
     }
 
     .btn:hover {
-      background: yellow;
+      background: #1d4ed8;
     }
-
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>Hi, I'm Aiswarya 👋</h1>
+  <header>
+    <h1>Aiswarya Sajan</h1>
     <p>Backend Developer | Node.js | TypeScript | PostgreSQL</p>
+    <a href="https://github.com/aiswaryasajan" class="btn" target="_blank">View GitHub</a>
+  </header>
 
-    <a href="https://github.com/AiswaryaSajan" class="btn">View My GitHub</a>
-
+  <section>
     <h2>About Me</h2>
-    <p>
-      Backend developer experienced in building scalable APIs,
-      JWT authentication systems, database optimization,
-      and warehouse management workflows.
-    </p>
+    <div class="card">
+      <p>
+        Backend Developer with experience building scalable applications 
+        for healthcare, restaurant POS systems, and warehouse management.
+        Skilled in designing APIs, database architecture, and optimizing performance.
+      </p>
+    </div>
+  </section>
 
+  <section>
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Cliniqally – Doctor App</h3>
+      <p>
+        Mobile healthcare application for doctors to manage appointments,
+        patient records, prescriptions, billing, and communication.
+      </p>
+      <p><strong>Role:</strong> Backend Developer</p>
+      <p><strong>Tech:</strong> Node.js, TypeScript, PostgreSQL</p>
+    </div>
+
+    <div class="card">
+      <h3>Piatto Pro – Restaurant POS System</h3>
+      <p>
+        Cloud-based POS system for restaurants supporting dine-in,
+        takeaway, delivery, menu management, and multi-outlet operations.
+      </p>
+      <p><strong>Role:</strong> Backend Developer</p>
+      <p><strong>Tech:</strong> Node.js, TypeScript, PostgreSQL, MongoDB</p>
+    </div>
+
+    <div class="card">
+      <h3>Warehouse Management System (2022–2023)</h3>
+      <p>
+        Web application for managing warehouse operations including
+        inventory tracking, stock management, and reporting.
+      </p>
+      <p><strong>Role:</strong> Backend Developer</p>
+      <p><strong>Tech:</strong> NestJS, TypeScript, PostgreSQL, MongoDB</p>
+    </div>
+
+  </section>
+
+  <section>
     <h2>Skills</h2>
     <div class="skills">
       <span>Node.js</span>
       <span>TypeScript</span>
-      <span>Express</span>
+      <span>NestJS</span>
       <span>PostgreSQL</span>
-      <span>JWT</span>
+      <span>MongoDB</span>
+      <span>Express.js</span>
       <span>REST APIs</span>
+      <span>JWT Authentication</span>
       <span>Git</span>
     </div>
+  </section>
 
-    <h2>Projects</h2>
-
+  <section>
+    <h2>Contact</h2>
     <div class="card">
-      <h3>Warehouse Management System</h3>
-      <p>Inventory control, stock workflow, purchase order handling using Node.js & PostgreSQL.</p>
+      <p>Email: your-email@example.com</p>
+      <p>GitHub: <a href="https://github.com/aiswaryasajan" target="_blank">github.com/aiswaryasajan</a></p>
+      <p>LinkedIn: Add your LinkedIn link here</p>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>POS Version Control System</h3>
-      <p>Environment-based app version management and deployment tracking.</p>
-    </div>
-
-    <div class="card">
-      <h3>Product Discount Module</h3>
-      <p>Designed database structure and discount calculation logic with proper schema relations.</p>
-    </div>
-
-  </div>
+  <footer>
+    <p>© 2026 Aiswarya Sajan | Backend Developer</p>
+  </footer>
 
 </body>
 </html>
